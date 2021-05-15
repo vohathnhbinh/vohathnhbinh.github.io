@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock, Paper, Scissors</title>
+    <link rel="stylesheet" href="./RPS.css">
+</head>
+<body>
+    <div id="greeting">
+        <h1 style="text-align: center;">Loading</h1>
+    </div>
+    <div class="choice">
+        <button class="btn" onclick="yourPlay('ROCK');">ROCK</button>
+        <button class="btn" onclick="yourPlay('PAPER');">PAPER</button>
+        <button class="btn" onclick="yourPlay('SCISSORS');">SCISSORS</button>
+    </div>
+    <div class="name">
+        <h2>Player</h2>
+        <h2>Computer</h2>
+    </div>
+    <div class="arena">
+        <img src="" alt="Player" id="Player"/>
+        <img src="" alt="Computer" id="Comp"/>
+    </div>
+    <h1 class="result" style="text-align: center;"></h1>
+    <h3 class="hehe" style="text-align: center;"></h3>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => { 
+            document.getElementById('greeting').getElementsByTagName('h1')[0].textContent = 'It\'s time to DUEL!!!';
+        });
+    </script>
+    <script src="./RPS.js"></script>
+</body>
+</html>
